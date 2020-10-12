@@ -6,6 +6,7 @@ import colors from '../config/colors';
 import Announcement from './Announcement';
 
 
+
 class AnnouncementScreen extends Component {
 
     constructor(props) {
@@ -15,12 +16,20 @@ class AnnouncementScreen extends Component {
             announcementText: '',
         };
     };
+    deleteAnnouncement(key) {
+        this.state.announcementArray.splice(key,1);
+        this.setState({ announcementArray: this.state.announcementArray})
+    }
+    
 
     render (){
 
         let announcements = this.state.announcementArray.map ((val,key) => {
             return <Announcement key = {key} keyval = {key} val = {val} 
-                    deleteMethod = { ()=> {this.deleteAnnouncement(key)}} />
+                    deleteMethod = { ()=> this.deleteAnnouncement(key) } />
+                    // deleteMethod = { () => 
+                    //     this.state.announcementArray.splice(key,1),
+                    //     this.setState({ announcementArray: this.state.announcementArray}) }/>
         });
 
         return(
@@ -62,10 +71,7 @@ class AnnouncementScreen extends Component {
 }
 
 
-    function deleteAnnouncement(key) {
-        this.state.announcementArray.splice(key,1);
-        this.setState({ announcementArray: this.state.announcementArray});
-    }
+   
 
 const styles = StyleSheet.create({
     container: {

@@ -5,7 +5,7 @@ import { withOrientation } from 'react-navigation';
 
 import colors from '../config/colors'
 
-export default class Announcement extends Component {
+export default class Announcement extends React.Component {
     render() {
         return (
             <View key={ this.props.keyval} style = {styles.announcement}>
