@@ -1,9 +1,13 @@
 import React from 'react';
-import { Image, ImageBackground, StyleSheet, View, Text } from 'react-native';
+import { Image, ImageBackground, StyleSheet, View, Text, Button } from 'react-native';
+import { } from 'react-navigation';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
+import AnnouncementScreen from './AnnouncementScreen';
 import colors from '../config/colors'
 
-function WelcomeScreen(props) {
+function WelcomeScreen({ navigation }) {
     return (
         <ImageBackground
             style = {styles.background}
@@ -13,10 +17,28 @@ function WelcomeScreen(props) {
         <View style = {styles.logoBanner}>
             <Image style = {styles.logo} source={require("../assets/housemate_icon.png")}/>
             <Text>Housemate Management</Text>
+            
         </View>
 
-            <View style = {styles.loginButton}></View>
-            <View style = {styles.registerButton}></View>
+        {/* <Button
+            title = "Login"
+            onPress = {() => navigation.navigate('Announcement')}
+            /> */}
+        <View style = {styles.loginButton}>
+            {/* <Text style = {styles.text}>Login</Text> */}
+            <Button
+            title = "Login"
+            onPress = {() => navigation.navigate('Announcement')}
+            />
+        </View> 
+        
+        <View style = {styles.registerButton}> 
+            {/* <Text style = {styles.text}>Register</Text> */}
+            <Button
+            title = "Register"
+            onPress = {() => navigation.navigate('Announcement')}
+            />
+        </View>
         </ImageBackground>
 
     );
@@ -30,7 +52,8 @@ const styles = StyleSheet.create({
     loginButton: {
         width: '100%',
         height: 70,
-        backgroundColor: colors.primary
+        backgroundColor: colors.primary,
+        alignContent: "center",
     },
     logo: {
         width: 100,
@@ -44,7 +67,12 @@ const styles = StyleSheet.create({
     registerButton: {
         width: '100%',
         height: 70,
-        backgroundColor: colors.secondary
+        backgroundColor: colors.secondary,
+        alignContent: "center",
+    },
+    text: {
+        textAlign: "center",
+        fontSize: 30,
     },
 })
 
