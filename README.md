@@ -26,7 +26,7 @@
 
 ### How does this hack-a-thing inspire you or relate to your possible project ideas?
 
-- This hack-a-thing relates to our project idea because they're both mobile applications and centered around the creation of lists. For our project, we want to create an announcement board and grocery list. This hack-a-thing allowed to familiarize myself with React-Native as well as create a super basic MVP for a personal announcment app. This basic structure will be expanded upon greatly in our project.
+- This hack-a-thing relates to our project idea because they're both mobile applications and centered around the creation of lists. For our project, we want to create an announcement board and grocery list. This hack-a-thing allowed to familiarize myself with React-Native as well as create a super basic MVP for a personal announcment app. This basic structure will be expanded upon greatly in our project. Future areas to explore: notifications, backend capability to share and save announcments, further customization in list.
 
 ### What didn’t work
 
@@ -36,14 +36,16 @@
 
 ### Opinions:
 
-- Expo makes it so much more convenient to deploy and test mobile apps
-- My previous hack-a-thing on CSS and HTML was still pretty helpful in creating the components
+- Expo makes it so much more convenient to deploy and test mobile apps.
+- My previous hack-a-thing knowledge on CSS and HTML was pretty helpful in creating the components.
 - Props and states are still a bit confusing to me.
 - Super amazed by React-Native's ability to code across android and ios, I learned a little bit of Swift in the past and I wish I had learned about React-Native.
 
 ### Resources:
 
-- React Native Tutorial for Beginners - Build a React Native App [2020] Youtube Tutorial [https://www.youtube.com/watch?v=0-S5a0eXPoc&ab_channel=ProgrammingwithMosh]
+I followed and watched a couple of tutorials:
+
+- React Native Tutorial for Beginners - Build a React Native App [2020] Youtube Tutorial: https://www.youtube.com/watch?v=0-S5a0eXPoc&ab_channel=ProgrammingwithMosh
 - Navigation: https://www.robinwieruch.de/react-native-navigation
 - Create ToDo app: https://www.youtube.com/watch?v=xb8uTN3qiUI&ab_channel=FullstackDevelopment
 - Clone of Evernote: https://www.youtube.com/watch?v=3qnrfkeguXg&ab_channel=PortEXE
